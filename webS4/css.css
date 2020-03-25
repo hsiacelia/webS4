@@ -1,0 +1,33 @@
+title{
+    alignment: center;
+    color: black;
+}
+
+.questionnaire{
+    padding-top: 8%
+}
+#numero{
+    height: 10%;
+    width: 30%;
+    text-align: center;
+}
+
+th{
+    border: 1px solid black;
+
+}
+
+#question{
+    height: 30%;
+    width: 30%;
+    text-align: center;
+}
+
+table{
+    margin: 0 auto;
+}
+
+#rep1{
+    height: 10%;
+    width: 40%;
+}
