@@ -12,8 +12,8 @@ class Choix {
             $('#rep4').css(css_blanchedalmond);
             $.ajax({
                 type: 'POST',
-                url: './question/cuisine.php',
-                data: 'reponse =' + 1,
+                url: 'question/cuisine.php',
+                data: {reponse : 1},
             });
         });
         $('#rep2').click(function () {
@@ -25,8 +25,8 @@ class Choix {
             $('#rep4').css(css_blanchedalmond);
             $.ajax({
                 type: 'POST',
-                url: './question/cuisine.php',
-                data: 'reponse =' + 2,
+                url: 'question/cuisine.php',
+                data: {reponse : 2},
             });
 
         });
@@ -39,8 +39,8 @@ class Choix {
             $('#rep4').css(css_blanchedalmond);
             $.ajax({
                 type: 'POST',
-                url: './question/cuisine.php',
-                data: 'reponse =' + 3,
+                url: 'question/cuisine.php',
+                data: {reponse : 3},
             });
 
         });
@@ -53,8 +53,8 @@ class Choix {
             $('#rep4').css(css_blue);
             $.ajax({
                 type: 'POST',
-                url: './question/cuisine.php',
-                data: 'reponse =' + 4,
+                url: 'question/cuisine.php',
+                data: {reponse : 4},
             });
         });
 

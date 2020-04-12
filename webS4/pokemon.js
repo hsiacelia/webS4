@@ -17,8 +17,8 @@ class Questionnaire{
         $('#previous').click(function () {
             $.ajax({
                 type: 'POST',
-                url: './question/pokemon.php',
-                data: 'question =' + cpt,
+                url: 'question/pokemon.php',
+                data:{question : cpt},
             });
 
             if (cpt ==  1) {
@@ -34,16 +34,16 @@ class Questionnaire{
         $('#next').click(function () {
             $.ajax({
                 type: 'POST',
-                url: './question/pokemon.php',
-                data: 'question =' + cpt,
+                url: 'question/pokemon.php',
+                data: {question : cpt},
             });
             if(cpt == 10){
                 etat = true
                 $.ajax({
                     type : 'POST',
-                    url : './question/pokemon.php',
+                    url : 'question/pokemon.php',
                     dataType : 'html',
-                    data : 'fini =' + etat,
+                    data : {fini: etat},
                 })
                     .done(function (data){
                         console.log(data.resultat);
@@ -74,7 +74,7 @@ class Questionnaire{
         });
 
         $('#again').click(function () {
-            window.location.href = 'cuisine.html'
+            window.location.href = 'pokemon.html'
         })
 
     }
@@ -121,7 +121,7 @@ class Questionnaire{
         $('#question').empty().append('Combien de génération y-a-t-il dans le jeu (avril 2020) ?');
         $('#rep1').empty().append('3');
         $('#rep2').empty().append('4');
-        $('#rep3').empty().append('5'); //vrai
+        $('#rep3').empty().append('5');
         $('#rep4').empty().append('6');
     }
 
@@ -137,7 +137,7 @@ class Questionnaire{
         $('#question').empty().append('Combien coûte un pass premium ?');
         $('#rep1').empty().append('50 Poképièces');
         $('#rep2').empty().append('80 Poképièces');
-        $('#rep3').empty().append('100 Poképièces'); //vrai
+        $('#rep3').empty().append('100 Poképièces');
         $('#rep4').empty().append('200 Poképièces');
     }
 
@@ -145,7 +145,7 @@ class Questionnaire{
         $('#question').empty().append('Combien de ligue de combat existe-il ?');
         $('#rep1').empty().append('1');
         $('#rep2').empty().append('2');
-        $('#rep3').empty().append('3'); //vrai
+        $('#rep3').empty().append('3');
         $('#rep4').empty().append('4');
     }
 
@@ -154,13 +154,13 @@ class Questionnaire{
         $('#rep1').empty().append('10 km');
         $('#rep2').empty().append('20 km');
         $('#rep3').empty().append('40 km');
-        $('#rep4').empty().append('50 km'); //vrai
+        $('#rep4').empty().append('50 km');
     }
 
     question6() {
 
         $('#question').empty().append('Quel est le pokémon qui possède le plus de PC dans le jeu (avril 2020) ?');
-        $('#rep1').empty().append('Monaflémit'); //vrai
+        $('#rep1').empty().append('Monaflémit');
         $('#rep2').empty().append('Kyogre');
         $('#rep3').empty().append('Dialga');
         $('#rep4').empty().append('Mewtwo');
@@ -171,14 +171,14 @@ class Questionnaire{
         $('#question').empty().append('Les demandes de pokéstop peuvent être faites à partir de quelle niveau ?');
         $('#rep1').empty().append('30');
         $('#rep2').empty().append('35');
-        $('#rep3').empty().append('40'); //vrai
+        $('#rep3').empty().append('40');
         $('#rep4').empty().append('Il n\'y a pas de niveau minimum requis');
     }
 
     question8() {
 
         $('#question').empty().append('Combien de poképièce (au maximum) peut-on avoir par jour ?');
-        $('#rep1').empty().append('50'); //vrai
+        $('#rep1').empty().append('50');
         $('#rep2').empty().append('100');
         $('#rep3').empty().append('150');
         $('#rep4').empty().append('Il n\'y a pas de niveau minimum requis');
@@ -188,7 +188,7 @@ class Questionnaire{
 
         $('#question').empty().append('En chromatique, Rayquaza est de quelle couleur ?');
         $('#rep1').empty().append('Blanc');
-        $('#rep2').empty().append('Noir'); //vrai
+        $('#rep2').empty().append('Noir');
         $('#rep3').empty().append('Rouge');
         $('#rep4').empty().append('Vert foncé');
     }
@@ -196,7 +196,7 @@ class Questionnaire{
     question10() {
 
         $('#question').empty().append('Parmis ces pokémons, qui n\'est pas un légendaire ?');
-        $('#rep1').empty().append('Darkrai');//vrai
+        $('#rep1').empty().append('Darkrai');
         $('#rep2').empty().append('Dialga');
         $('#rep3').empty().append('Groudon');
         $('#rep4').empty().append('Créfollet');

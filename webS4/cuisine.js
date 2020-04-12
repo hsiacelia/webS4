@@ -16,8 +16,8 @@ class Questionnaire{
         $('#previous').click(function () {
             $.ajax({
                 type: 'POST',
-                url: './question/cuisine.php',
-                data: 'question =' + cpt,
+                url: 'question/cuisine.php',
+                data: {question : cpt},
             });
 
             if (cpt ==  1) {
@@ -33,18 +33,17 @@ class Questionnaire{
         $('#next').click(function () {
             $.ajax({
                 type: 'POST',
-                url: './question/cuisine.php',
-                data: 'question =' + cpt,
+                url: 'question/cuisine.php',
+                data: {question : cpt},
             });
             if(cpt == 10){
                 $.ajax({
                     type : 'POST',
-                    url : './question/cuisine.php',
-                    dataType : 'html',
-                    data : 'fini =' + true,
+                    url : 'question/cuisine.php',
+                    data : {fini : true},
                 })
                     .done(function (data) {
-                        console.log(data);
+                        console.log(data.resultat);
                         $('#again').css(css_block);
                         $('#rep1').css(css_none);
                         $('#rep3').css(css_none);
@@ -53,7 +52,7 @@ class Questionnaire{
                         $('#titre').css(css_30);
                         $('#rep2').css(css_none);
                         $('#rep4').css(css_none);
-                        $('#resultat').html(data + ' / 10');
+                        $('#resultat').html(data.resultat + ' / 10');
                         $('#resultat').css(css_top_3);
                         $('#numero').css(css_none);
                         $('#question').css(css_none);
@@ -117,7 +116,7 @@ class Questionnaire{
     question1() {
         $('#question').empty().append('De quelle pays les nems sont-ils originaire ?');
         $('#rep1').empty().append('Chine');
-        $('#rep2').empty().append('Vietnam'); //vrai
+        $('#rep2').empty().append('Vietnam');
         $('#rep3').empty().append('Thailand');
         $('#rep4').empty().append('Japon');
     }
@@ -127,7 +126,7 @@ class Questionnaire{
         $('#rep1').empty().append('Sel');
         $('#rep2').empty().append('Sucre');
         $('#rep3').empty().append('Vinaigre de riz');
-        $('#rep4').empty().append('Riz gluant'); //vrai
+        $('#rep4').empty().append('Riz gluant');
     }
 
     question3() {
@@ -135,7 +134,7 @@ class Questionnaire{
         $('#rep1').empty().append('France');
         $('#rep2').empty().append('Brésil');
         $('#rep3').empty().append('Etats-Unis');
-        $('#rep4').empty().append('Allemagne'); //vrai
+        $('#rep4').empty().append('Allemagne');
     }
 
     question4() {
@@ -143,13 +142,13 @@ class Questionnaire{
         $('#rep1').empty().append('Italie');
         $('#rep2').empty().append('France');
         $('#rep3').empty().append('Suisse');
-        $('#rep4').empty().append('Etats-Unis'); //vrai
+        $('#rep4').empty().append('Etats-Unis');
     }
 
     question5() {
         $('#question').empty().append('De quelle ville la tapenade est-elle originaire ?');
         $('#rep1').empty().append('Nice');
-        $('#rep2').empty().append('Marseille'); //vrai
+        $('#rep2').empty().append('Marseille');
         $('#rep3').empty().append('Arles');
         $('#rep4').empty().append('Avignon');
     }
@@ -157,7 +156,7 @@ class Questionnaire{
     question6() {
 
         $('#question').empty().append('Quelle est l\'épice la plus chère au monde ?');
-        $('#rep1').empty().append('Safran'); //vrai
+        $('#rep1').empty().append('Safran');
         $('#rep2').empty().append('Vanille');
         $('#rep3').empty().append('Cardamone');
         $('#rep4').empty().append('Curcumin');
@@ -167,7 +166,7 @@ class Questionnaire{
 
         $('#question').empty().append('Quelle est la deuxième épice la plus chère au monde ?');
         $('#rep1').empty().append('Safran');
-        $('#rep2').empty().append('Vanille'); //vrai
+        $('#rep2').empty().append('Vanille');
         $('#rep3').empty().append('Cardamone');
         $('#rep4').empty().append('Curcumin');
     }
@@ -178,7 +177,7 @@ class Questionnaire{
         $('#rep1').empty().append('Tomate');
         $('#rep2').empty().append('Pastèque');
         $('#rep3').empty().append('Carambole');
-        $('#rep4').empty().append('Concombre'); //vrai
+        $('#rep4').empty().append('Concombre');
     }
 
     question9() {
@@ -186,14 +185,14 @@ class Questionnaire{
         $('#question').empty().append('Quelle fruit n\'est pas un fruit exotique ?');
         $('#rep1').empty().append('Litchi');
         $('#rep2').empty().append('Avocat');
-        $('#rep3').empty().append('Grenadine'); //vrai
+        $('#rep3').empty().append('Grenadine');
         $('#rep4').empty().append('Durian');
     }
 
     question10() {
 
         $('#question').empty().append('Quelle numero sur les oeufs correspondent à un élevage plein air et une alimentation biologique ?');
-        $('#rep1').empty().append('0');//vrai
+        $('#rep1').empty().append('0');
         $('#rep2').empty().append('1');
         $('#rep3').empty().append('2');
         $('#rep4').empty().append('3');
