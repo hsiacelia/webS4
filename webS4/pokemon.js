@@ -6,6 +6,7 @@ class Questionnaire{
         let css_top = {'padding-top':'10%'};
         let css_top_3 = {'padding-top':'3%'};
         let css_30 = {'font-size':'30px'};
+        let etat = false;
 
         let questionnaire = this;
         let cpt = 1;
@@ -37,14 +38,15 @@ class Questionnaire{
                 data: 'question =' + cpt,
             });
             if(cpt == 10){
+                etat = true
                 $.ajax({
                     type : 'POST',
                     url : './question/pokemon.php',
                     dataType : 'html',
-                    data : 'fini =' + true,
+                    data : 'fini =' + etat,
                 })
-                    .done(function (data) {
-                        console.log(data);
+                    .done(function (data){
+                        console.log(data.resultat);
                         $('#again').css(css_block);
                         $('#rep1').css(css_none);
                         $('#rep3').css(css_none);
@@ -53,7 +55,7 @@ class Questionnaire{
                         $('#titre').css(css_30);
                         $('#rep2').css(css_none);
                         $('#rep4').css(css_none);
-                        $('#resultat').html(data + ' / 10');
+                        $('#resultat').html(data.resultat + ' / 10');
                         $('#resultat').css(css_top_3);
                         $('#numero').css(css_none);
                         $('#question').css(css_none);
@@ -156,7 +158,7 @@ class Questionnaire{
 
     question6() {
 
-        $('#question').empty().append('Quel est me pokémon qui possède le plus de PC dans le jeu (avril 2020) ?');
+        $('#question').empty().append('Quel est le pokémon qui possède le plus de PC dans le jeu (avril 2020) ?');
         $('#rep1').empty().append('Monaflémit'); //vrai
         $('#rep2').empty().append('Kyogre');
         $('#rep3').empty().append('Dialga');
@@ -175,9 +177,9 @@ class Questionnaire{
     question8() {
 
         $('#question').empty().append('Combien de poképièce (au maximum) peut-on avoir par jour ?');
-        $('#rep1').empty().append('100'); //vrai
-        $('#rep2').empty().append('150');
-        $('#rep3').empty().append('200');
+        $('#rep1').empty().append('50'); //vrai
+        $('#rep2').empty().append('100');
+        $('#rep3').empty().append('150');
         $('#rep4').empty().append('Il n\'y a pas de niveau minimum requis');
     }
 

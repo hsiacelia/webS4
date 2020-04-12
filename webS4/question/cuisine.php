@@ -10,7 +10,7 @@ $obj -> resultat = 0;
 $resultat = 0;
 
 $tabRep = array();
-$tabVrai = array(2,4,4,4,2,1,2,4,3,1);
+$tabVrai = array(1=>2,2=>4,3=>4,4=>4,5=>2,6=>1,7=>2,8=>4,9=>3,10=>1);
 
 
 if(isset($_POST['question']) ===  true && isset($_POST['reponse']) == true){

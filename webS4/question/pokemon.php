@@ -10,7 +10,7 @@ $obj -> resultat = 0;
 $resultat = 0;
 
 $tabRep = array();
-$tabVrai = array(3,2,3,3,4,1,3,1,2,1);
+$tabVrai = array(1=>3,2=>2,3=>3,4=>3,5=>4,6=>1,7=>3,8=>1,9=>2,10=>1);
 
 
 if(isset($_POST['question']) ===  true && isset($_POST['reponse']) == true){
@@ -19,17 +19,16 @@ if(isset($_POST['question']) ===  true && isset($_POST['reponse']) == true){
 
 if(isset($_POST['fini']) == true && $_POST['fini'] == true){
     $resultat = verification($tabRep, $tabVrai);
-    $_Post['resultat'] = $resultat;
-//    $obj -> resultat = $res;
-//    echo json_encode($obj);
-    echo $resultat;
+    $obj -> resultat = $resultat;
+    echo json_encode($obj);
+
 
 }
 
 
 function verification ($tab, $tabVrai) {
     $res = 0;
-    for($i = 0; $i < 10; ++$i){
+    for($i = 1; $i < 11; ++$i){
         if($tab[$i] == $tabVrai[$i]){
             $res += 1;
         }
