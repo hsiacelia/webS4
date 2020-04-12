@@ -62,8 +62,6 @@ class Questionnaire{
                     }
 
 
-
-
             }
             else {
                 cpt = cpt + 1;
@@ -158,7 +156,7 @@ class Questionnaire{
 
     question6() {
 
-        $('#question').empty().append('Quelle l\'épice la plus chère au monde ?');
+        $('#question').empty().append('Quelle est l\'épice la plus chère au monde ?');
         $('#rep1').empty().append('Safran'); //vrai
         $('#rep2').empty().append('Vanille');
         $('#rep3').empty().append('Cardamone');

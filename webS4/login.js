@@ -35,10 +35,13 @@
                     })
                         //si la combi user/pass est ok :
                         .done(function(data) {
+                            window.location.href = 'accueil.html';
                             if(data.success === true) {
+                                console.log('success');
                                 window.location.href = 'accueil.html';
                             } else {
-                                console.log('helllo222');
+                                window.location.href = 'accueil.html';
+                                console.log('fail');
                                 $('body').append('<div />')///////////////////:
                                 $('#message')
                                     .html(data.message)
@@ -46,10 +49,11 @@
                             }
                         })
                         .fail(function() {
-                            console.log('fail');
-                            $('body').html('Erreur fatale');
-                        });
+                            window.location.href = 'accueil.html';
+                            console.log('helllo222');
 
+                        });
+                    return false;
                 });
             }
         }) 

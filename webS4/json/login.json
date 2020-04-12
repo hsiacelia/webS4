@@ -1,7 +1,8 @@
 {
    "users":[
        {
-
+            "username": "bonjour",
+            "password": "'bpnjour",
             "cuisine": [
                 {
                     "q1": "",
