@@ -36,7 +36,6 @@ class Questionnaire{
                 url: './question/cuisine.php',
                 data: 'question =' + cpt,
             });
-
             if(cpt == 10){
                 $.ajax({
                     url : './question/cuisine.php',

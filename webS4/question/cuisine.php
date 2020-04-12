@@ -7,6 +7,7 @@ session_start();
 
 $obj = new stdClass();
 $obj -> resultat = 0;
+$resultat = 0;
 
 $tabRep = array();
 $tabVrai = array(2,4,4,4,2,1,2,4,3,1);
@@ -18,7 +19,7 @@ if(isset($_POST['question']) ===  true && isset($_POST['reponse']) == true){
 
 if(isset($_POST['fini']) == true && $_POST['fini'] == true){
     $resultat = verification($tabRep, $tabVrai);
-    $_Post['resultat'] = $res;
+    $_Post['resultat'] = $resultat;
 //    $obj -> resultat = $res;
 //    echo json_encode($obj);
     echo $resultat;
