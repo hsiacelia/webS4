@@ -1,10 +1,10 @@
-title{
-    alignment: center;
-    color: black;
+h1{
+    text-align: center;
 }
 
+
 .questionnaire{
-    padding-top: 8%
+    padding-top: 5%
 }
 #numero{
     height: 10%;
@@ -12,9 +12,18 @@ title{
     text-align: center;
 }
 
-th{
-    border: 1px solid black;
+body{
+    background: bisque;
+}
 
+#again{
+    display: none;
+    text-align: center;
+    margin-left: 46%;
+}
+
+div{
+    text-align: center;
 }
 
 #question{
@@ -27,7 +36,20 @@ table{
     margin: 0 auto;
 }
 
-#rep1{
+
+#rep1, #rep2, #rep3, #rep4, #numero, #question{
+    border: 1px solid black;
     height: 10%;
     width: 40%;
+    background-color: blanchedalmond;
+}
+
+.reponse{
+    padding-bottom: 5%;
+}
+
+
+
+form{
+    text-align: center;
 }

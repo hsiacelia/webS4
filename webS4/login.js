@@ -15,30 +15,28 @@
                     .html('Déconnexion')
                     .click(function (){
                         $.ajax({
-                            url: 'json/logout.php',
+                            url: './json/logout.php',
                             method: 'GET'
                         })
                         .done(function() {
                             console.log("pb de connexion");
-                            window.location.href = '/login.html';
+                            window.location.href = 'login.html';
                         })
                     })
                 )
             }
             else {
                 $('#login-form').submit(function() {
+                    console.log('submit');
                     $.ajax({
                         url: $(this).attr('action'),
                         method: $(this).attr('method'),
                         data: $(this).serialize()
                     })
-
                         //si la combi user/pass est ok :
                         .done(function(data) {
-                            console.log('helllo111');
-                            console.log(data);
                             if(data.success === true) {
-                                window.location.href = '/accueil.html';
+                                window.location.href = 'accueil.html';
                             } else {
                                 console.log('helllo222');
                                 $('body').append('<div />')///////////////////:
@@ -48,9 +46,10 @@
                             }
                         })
                         .fail(function() {
+                            console.log('fail');
                             $('body').html('Erreur fatale');
                         });
-                    return false;
+
                 });
             }
         }) 

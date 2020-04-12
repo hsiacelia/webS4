@@ -4,39 +4,46 @@
     <meta charset="UTF-8">
     <title>Cuisine</title>
     <link rel="stylesheet" href="css.css">
-<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
-<!--    <script src="cuisine.js"></script>-->
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="cuisine.js"></script>
+    <script src="choix.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 <body>
+    <?php
+        session_start
+    ?>
     <h1>Cuisine</h1>
+    <div id ="titre"></div>
+    <div id ="resultat"></div>
     <table class="questionnaire">
         <tr>
-            <th id="numero">bsfg</th>
+            <th id="numero"></th>
         </tr>
         <tr>
-            <th id="question">sbf</th>
+            <th id="question"></th>
         </tr>
     </table>
     <br>
     <table class="reponse">
         <tr>
-            <th id="rep1">bsgf</th>
+            <th id="rep1"></th>
         </tr>
         <tr>
-            <th id="rep2">bfsg</th>
+            <th id="rep2"></th>
         </tr>
         <tr>
-            <th id="rep3">bgfs</th>
+            <th id="rep3"></th>
         </tr>
         <tr>
-            <th id="rep4">bgfs</th>
+            <th id="rep4"></th>
         </tr>
     </table>
-    <form method="get">
+    <form>
         <input id="previous" type="button" value="Précédent">
-        <input id="submit" type="button" value="Valider">
+        <input id="next" type="button" value="Valider">
     </form>
+    <input id="again" type="button" value="Réessayer">
 </body>
 </html>

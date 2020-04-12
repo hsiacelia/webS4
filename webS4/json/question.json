@@ -1,0 +1,109 @@
+{
+  "cuisine": [
+    {
+      "question": [
+        {
+          "1" : "le'De quelle payss nems sont-ils originaire ?",
+          "2" : "Utilise-t-on élément n\\'utilise-t-on pour faire des sushi ?",
+          "3" : "De quelle pays les burgers sont-ils originaire ?",
+          "4" : "D\\'où provient le meilleur fromage du monde World Cheese Awards 2019 ?",
+          "5" : "De quelle ville la tapenade est-elle originaire ?",
+          "6" : "Quelle l\\'épice la plus chère au monde ?",
+          "7" : "Quelle est la deuxième épice la plus chère au monde ?",
+          "8" : "Quelle est le fruit ou le légume qui possède la plus forte teneur en eau ?",
+          "9" : "Quelle fruit n\\'est pas un fruit exotique ?",
+          "10" : "Quelle numero sur les oeufs correspondent à un élevage plein air et une alimentation biologique ?"
+        }
+      ],
+      "choix": [
+        {
+          "1" : [
+            {
+              "1" : "Chine",
+              "2" : "Vietnam",
+              "3" : "Thailand",
+              "4" : "Japon"
+            }
+          ],
+          "2" : [
+            {
+              "1" : "Sel",
+              "2" : "Sucre",
+              "3" : "Vinaigre de riz",
+              "4" : "Riz gluant"
+            }
+          ],
+          "3" : [
+            {
+              "1" : "France",
+              "2" : "Brésil",
+              "3" : "Etats-Unis",
+              "4" : "Allemagne"
+            }
+          ],
+          "4" : [
+            {
+              "1" : "Italie",
+              "2" : "France",
+              "3" : "Suisse",
+              "4" : "Etats-Unis"
+            }
+          ],
+          "5" : [
+            {
+              "1" : "Nice",
+              "2" : "Marseille",
+              "3" : "Arles",
+              "4" : "Avignon"
+            }
+          ],
+          "6" : [
+            {
+              "1" : "Safran",
+              "2" : "Vanille",
+              "3" : "Cardamone",
+              "4" : "Curcumin"
+            }
+          ],
+          "7" : [
+            {
+              "1" : "Safran",
+              "2" : "Vanille",
+              "3" : "Cardamone",
+              "4" : "Curcumin"
+            }
+          ],
+          "8" : [
+            {
+              "1" : "Tomate",
+              "2" : "Pastèque",
+              "3" : "Carambole",
+              "4" : "Concomnbre"
+            }
+          ],
+          "9" : [
+            {
+              "1" : "Litchi",
+              "2" : "Avocat",
+              "3" : "Grenadine",
+              "4" : "Durian"
+            }
+          ],
+          "10" : [
+            {
+              "1" : "0",
+              "2" : "1",
+              "3" : "2",
+              "4" : "3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "next" : [
+    {
+
+    }
+  ]
+}
