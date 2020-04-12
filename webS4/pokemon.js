@@ -47,6 +47,7 @@ class Questionnaire{
                 })
                     .done(function (data){
                         console.log(data.resultat);
+                        console.log(data);
                         $('#again').css(css_block);
                         $('#rep1').css(css_none);
                         $('#rep3').css(css_none);

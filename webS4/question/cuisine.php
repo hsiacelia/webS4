@@ -29,7 +29,7 @@ if(isset($_POST['fini']) == true && $_POST['fini'] == true){
 
 function verification ($tab, $tabVrai) {
     $res = 0;
-    for($i = 0; $i < 10; ++$i){
+    for($i = 1; $i < 11; ++$i){
         if($tab[$i] == $tabVrai[$i]){
             $res += 1;
         }
