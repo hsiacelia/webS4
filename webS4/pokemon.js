@@ -42,8 +42,8 @@ class Questionnaire{
                     url : './question/pokemon.php',
                     dataType : 'html',
                     data : 'fini =' + true,
-                }),
-                    function (data) {
+                })
+                    .done(function (data) {
                         console.log(data);
                         $('#again').css(css_block);
                         $('#rep1').css(css_none);
@@ -59,7 +59,7 @@ class Questionnaire{
                         $('#question').css(css_none);
                         $('#previous').css(css_none);
                         $('#next').css(css_none);
-                    }
+                    })
 
 
             }
