@@ -124,10 +124,10 @@ class Questionnaire{
 
     question2() {
         $('#question').empty().append('Combien coûte la boîte hyper ?');
-        $('#rep1').empty().append('1470');
-        $('#rep2').empty().append('1480'); //vrai
-        $('#rep3').empty().append('1490');
-        $('#rep4').empty().append('1500');
+        $('#rep1').empty().append('1470 Poképièces');
+        $('#rep2').empty().append('1480 Poképièces'); //vrai
+        $('#rep3').empty().append('1490 Poképièces');
+        $('#rep4').empty().append('1500 Poképièces');
     }
 
     question3() {
