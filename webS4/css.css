@@ -53,3 +53,9 @@ table{
 form{
     text-align: center;
 }
+
+img{
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 5%;
+}
