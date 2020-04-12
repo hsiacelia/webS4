@@ -38,8 +38,10 @@ class Questionnaire{
             });
             if(cpt == 10){
                 $.ajax({
+                    type : 'POST',
                     url : './question/cuisine.php',
                     dataType : 'html',
+                    data : 'fini =' + true,
                 }),
                     function (data) {
                         console.log(data);
