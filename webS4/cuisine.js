@@ -6,7 +6,7 @@ class Questionnaire{
         let css_top = {'padding-top':'10%'};
         let css_top_3 = {'padding-top':'3%'};
         let css_30 = {'font-size':'30px'};
-
+        let etat =false;
         let questionnaire = this;
         let cpt = 1;
 
@@ -37,9 +37,11 @@ class Questionnaire{
                 data: {question : cpt},
             });
             if(cpt == 10){
+                etat = true;
                 $.ajax({
                     type : 'POST',
                     url : 'question/cuisine.php',
+                    dataType : 'html',
                     data : {fini : true},
                 })
                     .done(function (data) {

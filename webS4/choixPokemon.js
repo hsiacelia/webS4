@@ -38,7 +38,7 @@ class Choix {
             $('#rep3').css(css_blue);
             $('#rep4').css(css_blanchedalmond);
             $.ajax({
-                type: 'POST',
+                method: 'POST',
                 url: 'question/pokemon.php',
                 data: {reponse : 3},
             });

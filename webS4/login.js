@@ -18,7 +18,6 @@
                                 method: 'GET'
                             })
                             .done(function() {
-                                console.log("pb de connexion");
                                 window.location.href = 'login.html';
                             })
                         })

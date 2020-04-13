@@ -38,7 +38,7 @@ class Questionnaire{
                 data: {question : cpt},
             });
             if(cpt == 10){
-                etat = true
+                etat = true;
                 $.ajax({
                     type : 'POST',
                     url : 'question/pokemon.php',
