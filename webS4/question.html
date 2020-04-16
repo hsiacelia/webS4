@@ -4,30 +4,55 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="quizz, categorie, cuisine, pokemon go">
     <meta name="description" content="Tester vos connaissances avec ce quizz"/>
-    <title>Questions</title>
+    <title>Quizz</title>
     <link rel="stylesheet" href="css.css">
-    <script src="json/connexion.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="json/connexion.js"></script>
+    <script src="question.js"></script>
 </head>
 <body>
-<h1>Questions</h1>
+<h1 id="title">Quizz</h1>
 <nav>
     <ul class = "menu">
-        <li><a href="accueil.html">Accueil</a></li>
         <li><a href="question.html">Questions</a></li>
         <li><a href="json/logout.php">Déconnexion</a></li>
     </ul>
 </nav>
-
-<div id="page">
-    <a href="cuisine.html">
-        <img id = "cuisine" src="image/food.png" alt="cuisine" width="50px" height="auto">
-        <p>Cuisine</p>
-    </a>
-    <a href="pokemon.html">
-        <img id = "pokemon" src="image/pokemon.png" alt="pokemon go" width="50px" height="auto">
-        <p>Pokemon Go</p>
-    </a>
+<div>
+    <table class="questionnaire">
+        <tr>
+            <th id="number"></th>
+        </tr>
+        <tr>
+            <th id="question"></th>
+        </tr>
+    </table>
+    <br>
+    <table class="reponse">
+        <tr>
+            <th class = onlyone id="rep1" data-reponse="1"></th>
+        </tr>
+        <tr>
+            <th class="onlyone" id="rep2" data-reponse="2"></th>
+        </tr>
+        <tr>
+            <th class="onlyone" id="rep3" data-reponse="3"></th>
+        </tr>
+        <tr>
+            <th class="onlyone" id="rep4" data-reponse="4"></th>
+        </tr>
+    </table>
+    <form action="json/question.php" method="POST" id="question-form">
+        <button id="valider" name="valider">Valider</button>
+    </form>
 </div>
+<form action="json/category.php" method="POST" id="category-form">
+    <input class="category-button" type="image" src="image/food.png" alt="cuisine" name="cuisine" data-category="cuisine"><br>
+    <button class="category-button" name="cuisine" data-category="cuisine">Cuisine</button><br>
+    <input class="category-button" type="image" src="image/pokemon.png" alt="pokemon" name="pokemon" data-category="pokemon"><br>
+    <button class="category-button" name="pokemon" data-category="pokemon">Pokemon</button><br>
+</form>
+
 </body>
 </html>

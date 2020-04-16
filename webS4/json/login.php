@@ -12,8 +12,6 @@ $obj ->success = false;
 
 $contentFileJson = file_get_contents("login.json");
 $scoreBoard = json_decode($contentFileJson, true);
-$user= $scoreBoard['users'];
-
 
 
 foreach ($scoreBoard['users'] as $key){

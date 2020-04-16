@@ -1,109 +1,275 @@
 {
-  "cuisine": [
+  "category" : [
     {
-      "question": [
-        {
-          "1" : "le'De quelle payss nems sont-ils originaire ?",
-          "2" : "Utilise-t-on élément n\\'utilise-t-on pour faire des sushi ?",
-          "3" : "De quelle pays les burgers sont-ils originaire ?",
-          "4" : "D\\'où provient le meilleur fromage du monde World Cheese Awards 2019 ?",
-          "5" : "De quelle ville la tapenade est-elle originaire ?",
-          "6" : "Quelle l\\'épice la plus chère au monde ?",
-          "7" : "Quelle est la deuxième épice la plus chère au monde ?",
-          "8" : "Quelle est le fruit ou le légume qui possède la plus forte teneur en eau ?",
-          "9" : "Quelle fruit n\\'est pas un fruit exotique ?",
-          "10" : "Quelle numero sur les oeufs correspondent à un élevage plein air et une alimentation biologique ?"
-        }
-      ],
-      "choix": [
+      "numero": 0,
+      "cuisine" : [
         {
           "1" : [
             {
-              "1" : "Chine",
-              "2" : "Vietnam",
-              "3" : "Thailand",
-              "4" : "Japon"
+              "question" : "De quelle pays les nems sont-ils originaire ?",
+              "reponse" : [
+                {
+                  "1" : "Chine",
+                  "2" : "Vietnam",
+                  "3" : "Thailand",
+                  "4" : "Japon"
+                }
+              ]
             }
           ],
-          "2" : [
+          "2": [
             {
-              "1" : "Sel",
-              "2" : "Sucre",
-              "3" : "Vinaigre de riz",
-              "4" : "Riz gluant"
+              "question" : "Utilise-t-on élément n\\'utilise-t-on pour faire des sushi ?",
+              "reponse" : [
+                {
+                  "1" : "Sel",
+                  "2" : "Sucre",
+                  "3" : "Vinaigre de riz",
+                  "4" : "Riz gluant"
+                }
+              ]
             }
           ],
-          "3" : [
+          "3": [
             {
-              "1" : "France",
-              "2" : "Brésil",
-              "3" : "Etats-Unis",
-              "4" : "Allemagne"
+              "question" : "De quelle pays les burgers sont-ils originaire ?",
+              "reponse" : [
+                {
+                  "1": "France",
+                  "2" : "Bréssil",
+                  "3" : "Suisse",
+                  "4" : "Etats-Unis"
+                }
+              ]
             }
           ],
           "4" : [
             {
-              "1" : "Italie",
-              "2" : "France",
-              "3" : "Suisse",
-              "4" : "Etats-Unis"
+              "question" : "D\\'où provient le meilleur fromage du monde World Cheese Awards 2019 ?",
+              "reponse" : [
+                {
+                  "1": "Italie",
+                  "2" : "France",
+                  "3" : "Suisse",
+                  "4" : "Etats-Unis"
+                }
+              ]
             }
           ],
           "5" : [
             {
-              "1" : "Nice",
-              "2" : "Marseille",
-              "3" : "Arles",
-              "4" : "Avignon"
+              "question" : "De quelle ville la tapenade est-elle originaire ?",
+              "reponse" : [
+                {
+                  "1": "Nice",
+                  "2" : "Marseille",
+                  "3" : "Arles",
+                  "4" : "Avignon"
+                }
+              ]
             }
           ],
           "6" : [
             {
-              "1" : "Safran",
-              "2" : "Vanille",
-              "3" : "Cardamone",
-              "4" : "Curcumin"
+              "question" : "Quelle est l\\'épice la plus chère au monde ?",
+              "reponse" : [
+                {
+                  "1": "Safran",
+                  "2" : "Vanille",
+                  "3" : "Cardamone",
+                  "4" : "Curcumin"
+                }
+              ]
             }
           ],
           "7" : [
             {
-              "1" : "Safran",
-              "2" : "Vanille",
-              "3" : "Cardamone",
-              "4" : "Curcumin"
+              "question" : "Quelle est la deuxième épice la plus chère au monde ?",
+              "reponse" : [
+                {
+                  "1": "Safran",
+                  "2" : "Vanille",
+                  "3" : "Cardamone",
+                  "4" : "Curcumin"
+                }
+              ]
             }
           ],
           "8" : [
             {
-              "1" : "Tomate",
-              "2" : "Pastèque",
-              "3" : "Carambole",
-              "4" : "Concomnbre"
+              "question" : "Quelle est le fruit ou le légume qui possède la plus forte teneur en eau ?",
+              "reponse" : [
+                {
+                  "1": "Tomate",
+                  "2" : "Pastèque",
+                  "3" : "Carambole",
+                  "4" : "Concombre"
+                }
+              ]
             }
           ],
           "9" : [
             {
-              "1" : "Litchi",
-              "2" : "Avocat",
-              "3" : "Grenadine",
-              "4" : "Durian"
+              "question" : "'Quelle fruit n\\'est pas un fruit exotique ?",
+              "reponse" : [
+                {
+                  "1": "Litchi",
+                  "2" : "Avocat",
+                  "3" : "Grenadine",
+                  "4" : "Durian"
+                }
+              ]
             }
           ],
           "10" : [
             {
-              "1" : "0",
-              "2" : "1",
-              "3" : "2",
-              "4" : "3"
+              "question" : "Quelle numero sur les oeufs correspondent à un élevage plein air et une alimentation biologique ?",
+              "reponse" : [
+                {
+                  "1": "0",
+                  "2" : "1",
+                  "3" : "2",
+                  "4" : "3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pokemon" : [
+        {
+          "1" : [
+            {
+              "question" : "Combien de génération y-a-t-il dans le jeu (avril 2020) ?",
+              "reponse" : [
+                {
+                  "1": "3",
+                  "2" : "4",
+                  "3" : "5",
+                  "4" : "6"
+                }
+              ]
+            }
+          ],
+          "2" : [
+            {
+              "question" : "Combien coûte la boîte hyper ?",
+              "reponse" : [
+                {
+                  "1": "1470 Poképièces",
+                  "2" : "1480 Poképièces",
+                  "3" : "1490 Poképièces",
+                  "4" : "1500 Poképièces"
+                }
+              ]
+            }
+          ],
+          "3" : [
+            {
+              "question" : "Combien coûte un pass premium ?",
+              "reponse" : [
+                {
+                  "1": "50 Poképièces",
+                  "2" : "80 Poképièces",
+                  "3" : "100 Poképièces",
+                  "4" : "200 Poképièces"
+                }
+              ]
+            }
+          ],
+          "4" : [
+            {
+              "question" : "Combiende ligue de combat existe-il ?",
+              "reponse" : [
+                {
+                  "1": "1",
+                  "2" : "2",
+                  "3" : "3",
+                  "4" : "4"
+                }
+              ]
+            }
+          ],
+          "5" : [
+            {
+              "question" : "Combiende de kilomètre par semaine faut-il marcher pour avoir un espoir d\\'obtenir un oeuf de 10 km dans la récompense quotidienne ?",
+              "reponse" : [
+                {
+                  "1": "20 km",
+                  "2" : "30 km",
+                  "3" : "40 km",
+                  "4" : "50 km"
+                }
+              ]
+            }
+          ],
+          "6" : [
+            {
+              "question" : "Quel est le pokémon qui possède le plus de PC dans le jeu (avril 2020) ?",
+              "reponse" : [
+                {
+                  "1": "Monaflémit",
+                  "2" : "Kyogre",
+                  "3" : "Dialga",
+                  "4" : "Mewtwo"
+                }
+              ]
+            }
+          ],
+          "7" : [
+            {
+              "question" : "Les demandes de pokéstop peuvent être faites à partir de quelle niveau ?",
+              "reponse" : [
+                {
+                  "1": "30",
+                  "2" : "35",
+                  "3" : "40",
+                  "4" : "Il n\\'y a pas de niveau minimum requis"
+                }
+              ]
+            }
+          ],
+          "8" : [
+            {
+              "question" : "Combien de poképièce (au maximum) peut-on avoir par jour ?",
+              "reponse" : [
+                {
+                  "1": "50",
+                  "2" : "100",
+                  "3" : "150",
+                  "4" : "Il n\\'y a pas de niveau minimum requis"
+                }
+              ]
+            }
+          ],
+          "9" : [
+            {
+              "question" : "En chromatique, Rayquaza est de quelle couleur ?",
+              "reponse" : [
+                {
+                  "1": "Blanc",
+                  "2" : "Noir",
+                  "3" : "Rouge",
+                  "4" : "Vert foncé"
+                }
+              ]
+            }
+          ],
+          "10" : [
+            {
+              "question" : "Parmis ces pokémons, qui n\\'est pas un légendaire ?",
+              "reponse" : [
+                {
+                  "1": "Darkrai",
+                  "2" : "Dialga",
+                  "3" : "Groudon",
+                  "4" : "Créfollet"
+                }
+              ]
             }
           ]
         }
       ]
-    }
-  ],
-  "next" : [
-    {
-
     }
   ]
 }

@@ -32,7 +32,7 @@
                         })
                             .done(function(data) {
                                 if(data.success ) {  //bon compte
-                                    window.location.href = 'accueil.html';
+                                    window.location.href = 'question.html';
                                 } else {                     // mauvais pwd ou id;
                                     $('body').append('<div />');
                                     $('#message')

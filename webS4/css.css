@@ -7,7 +7,7 @@ h1{
 .questionnaire{
     padding-top: 5%
 }
-#numero{
+#number{
     height: 10%;
     width: 30%;
     text-align: center;
@@ -15,12 +15,6 @@ h1{
 
 body{
     background: bisque;
-}
-
-#again{
-    display: none;
-    text-align: center;
-    margin-left: 46%;
 }
 
 div{
@@ -38,35 +32,23 @@ table{
 }
 
 
-#rep1, #rep2, #rep3, #rep4, #numero, #question{
+#1, #2, #3, #4{
     border: 1px solid black;
     height: 10%;
     width: 40%;
     background-color: blanchedalmond;
 }
 
-.reponse{
+.answer{
     padding-bottom: 5%;
 }
-
-
-
-form{
-    text-align: center;
-}
-
-img{
-    text-align: center;
-    padding-top: 10%;
-}
-
-
 
 .menu{
     margin: 0%;
     padding: 0%;
     display: inline;
     list-style: none;
+    margin-left: 15%;
 }
 
 nav li{
@@ -79,9 +61,29 @@ nav li{
     padding-left: 17%;
 }
 
-#description{
-    margin-top: 8%;
-    margin-left: 10%;
-    margin-right: 10%;
+#button{
+    display: none;
     text-align: center;
+}
+
+input[type=image]{
+    text-align: center;
+    padding-top: 10%;
+    width: 15%;
+    outline: 0;
+}
+
+#category-form{
+    text-align: center;
+    outline: 0;
+}
+
+#valider{
+    display: none;
+    margin: auto;
+}
+.category-button{
+    background-color: transparent;
+    border-color: transparent;
+    outline: 0;
 }

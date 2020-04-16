@@ -11,6 +11,7 @@ $obj->success = false;
 
 if (isset($_SESSION['username']) == true && isset( $_SESSION['password']) == true){
     $obj->isConnected = true;
+    $obj->success = true;
 }else {
     $obj->isConnected = false;
 }
