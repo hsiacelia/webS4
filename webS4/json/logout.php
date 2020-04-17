@@ -8,4 +8,4 @@ session_start();
 session_destroy();
 
 //echo json_encode(true);
-header('Location: ../index.php');
+header('Location: ../index.html');
