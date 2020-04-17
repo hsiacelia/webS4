@@ -6,7 +6,7 @@
         {
           "1" : [
             {
-              "question" : "De quelle pays les nems sont-ils originaire ?",
+              "question" : "De quel pays les nems sont-ils originaire ?",
               "reponse" : [
                 {
                   "1" : "Chine",
@@ -19,7 +19,7 @@
           ],
           "2": [
             {
-              "question" : "Quelle élément n\\'est pas utilisé pour faire des sushi ?",
+              "question" : "Quel élément n\\'est pas utilisé pour faire des sushi ?",
               "reponse" : [
                 {
                   "1" : "Sel",
@@ -32,7 +32,7 @@
           ],
           "3": [
             {
-              "question" : "De quelle pays les burgers sont-ils originaire ?",
+              "question" : "De quel pays les burgers sont-ils originaire ?",
               "reponse" : [
                 {
                   "1": "France",
@@ -97,7 +97,7 @@
           ],
           "8" : [
             {
-              "question" : "Quelle est le fruit ou le légume qui possède la plus forte teneur en eau ?",
+              "question" : "Quel est le fruit ou le légume qui possède la plus forte teneur en eau ?",
               "reponse" : [
                 {
                   "1": "Tomate",
@@ -110,7 +110,7 @@
           ],
           "9" : [
             {
-              "question" : "'Quelle fruit n\\'est pas un fruit exotique ?",
+              "question" : "'Quel fruit n\\'est pas un fruit exotique ?",
               "reponse" : [
                 {
                   "1": "Litchi",
@@ -123,7 +123,7 @@
           ],
           "10" : [
             {
-              "question" : "Quelle numero sur les oeufs correspondent à un élevage plein air et une alimentation biologique ?",
+              "question" : "Quel numero sur les oeufs correspondent à un élevage plein air et une alimentation biologique ?",
               "reponse" : [
                 {
                   "1": "Le numéro 0",
@@ -179,7 +179,7 @@
           ],
           "4" : [
             {
-              "question" : "Combiende ligue de combat existe-il ?",
+              "question" : "Combien de ligue de combat existe-il ?",
               "reponse" : [
                 {
                   "1": "1 ligue",
