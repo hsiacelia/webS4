@@ -19,7 +19,7 @@
           ],
           "2": [
             {
-              "question" : "Utilise-t-on élément n\\'utilise-t-on pour faire des sushi ?",
+              "question" : "Quelle élément n\\'est pas utilisé pour faire des sushi ?",
               "reponse" : [
                 {
                   "1" : "Sel",
