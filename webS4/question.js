@@ -1,8 +1,5 @@
 class Question{
 
-    handle_result = (data) => {
-    };
-
     constructor() {
         let css_none = {'display':'none'};
         let css_block = {'display':'block'};
@@ -14,6 +11,7 @@ class Question{
         let css_border = {'border':'none'};
         let reponse;
         let numero = 1;
+        let question = this;
         $('.category-button').on('click', function (e) {
             e.preventDefault();
             console.log('click');
@@ -28,13 +26,7 @@ class Question{
                     $('#category-form').css(css_none);
                     $('#valider').css(css_block);
                     $('#title').empty().append(data.category);
-                    $('#number').append("Question " + data.number);
-                    $('#question').append(data.question);
-                    $('#rep1').css(css_block).append(data.reponse1);
-                    $('#rep2').css(css_block).append(data.reponse2);
-                    $('#rep3').css(css_block).append(data.reponse3);
-                    $('#rep4').css(css_block).append(data.reponse4);
-                    $('#valider').prop('disabled', true);
+                    question.affiheQuestion(data.number, data.question, data.reponse1, data.reponse2, data.reponse3, data.reponse4);
                     $('.onlyone').click(function () {
                        $('.onlyone').css(css_blanchedalmond);
                        $(this).css(css_blue);
@@ -52,13 +44,7 @@ class Question{
                                 numero = numero + 1;
                                 console.log('fini',data.fini);
                                 $('.onlyone').css(css_blanchedalmond)
-                                $('#valider').prop('disabled', true);
-                                $('#number').empty().append("Question " + data.number);
-                                $('#question').empty().append(data.question);
-                                $('#rep1').empty().append(data.reponse1);
-                                $('#rep2').empty().append(data.reponse2);
-                                $('#rep3').empty().append(data.reponse3);
-                                $('#rep4').empty().append(data.reponse4);
+                                question.afficheQuestion(data.number, data.question, data.reponse1, data.reponse2, data.reponse3, data.reponse4);
                                 $('.onlyone').click(function () {
                                     $('.onlyone').css(css_blanchedalmond);
                                     $(this).css(css_blue);
@@ -106,6 +92,16 @@ class Question{
             return false;
         });
 
+    }
+
+    afficheQuestion(number,question,rep1,rep2,rep3,rep4){
+        $('#number').empty().append("Question " + number);
+        $('#question').empty().append(question);
+        $('#rep1').empty().append(rep1);
+        $('#rep2').empty().append(rep2);
+        $('#rep3').empty().append(rep3);
+        $('#rep4').empty().append(rep4);
+        $('#valider').prop('disabled', true);
     }
 
 }
