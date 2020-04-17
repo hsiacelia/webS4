@@ -14,7 +14,6 @@ class Question{
         let question = this;
         $('.category-button').on('click', function (e) {
             e.preventDefault();
-            console.log('click');
             $.ajax({
                 url: 'json/category.php',
                 method: 'post',
@@ -42,7 +41,6 @@ class Question{
                         }).done(function (data) {
                             if(!data.fini){
                                 numero = numero + 1;
-                                console.log('fini',data.fini);
                                 $('.onlyone').css(css_blanchedalmond)
                                 question.affichequestion(data.number, data.question, data.reponse1, data.reponse2, data.reponse3, data.reponse4);
                                 $('.onlyone').click(function () {
@@ -53,10 +51,6 @@ class Question{
                                 });
                             }
                             else{
-                                console.log('fini', data.fini);
-                                console.log(data.tab);
-                                console.log(data.resultat);
-                                console.log(data.test);
                                 let res = data.resultat;
                                 $('#valider').html('Retour aux choix').click(function () {
                                     window.location.href = 'question.html';
