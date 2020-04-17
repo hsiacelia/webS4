@@ -126,10 +126,10 @@
               "question" : "Quelle numero sur les oeufs correspondent à un élevage plein air et une alimentation biologique ?",
               "reponse" : [
                 {
-                  "1": "0",
-                  "2" : "1",
-                  "3" : "2",
-                  "4" : "3"
+                  "1": "Le numéro 0",
+                  "2" : "Le numéro 1",
+                  "3" : "Le numéro 2",
+                  "4" : "Le numéro 3"
                 }
               ]
             }
@@ -182,10 +182,10 @@
               "question" : "Combiende ligue de combat existe-il ?",
               "reponse" : [
                 {
-                  "1": "1",
-                  "2" : "2",
-                  "3" : "3",
-                  "4" : "4"
+                  "1": "1 ligue",
+                  "2" : "2 ligues",
+                  "3" : "3 ligues",
+                  "4" : "4 ligues"
                 }
               ]
             }
@@ -234,9 +234,9 @@
               "question" : "Combien de poképièce (au maximum) peut-on avoir par jour ?",
               "reponse" : [
                 {
-                  "1": "50",
-                  "2" : "100",
-                  "3" : "150",
+                  "1": "50 Poképièces",
+                  "2" : "100 Poképièces",
+                  "3" : "150 Poképièces",
                   "4" : "Il n\\'y a pas de niveau minimum requis"
                 }
               ]

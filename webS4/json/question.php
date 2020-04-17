@@ -58,13 +58,12 @@ if(isset($_POST['valider']) ){
         $pokemon = array(1=>3, 2=>2, 3=>3, 4=>3, 5=>4, 6=>1, 7=>3, 8=>1, 9=>2, 10=>1);
         $obj->tab = $_SESSION['tabRep'];
         if($category == 'cuisine'){
-            $obj->test = 'yesCuisine';
             $obj->resultat = point($_SESSION['tabRep'], $cuisine);
         }
         elseif ($category == 'pokemon'){
-            $obj->resultat = point($_SESSION['tabRep'], $cuisine);
-            $obj->test = 'yesPokemon';
+            $obj->resultat = point($_SESSION['tabRep'], $pokemon);
         }
+        $_SESSION['tabRep'] = array();
     }
 }
 

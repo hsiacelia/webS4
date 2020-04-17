@@ -11,6 +11,7 @@ class Question{
         let css_top = {'padding-top':'10%'};
         let css_30 = {'font-size':'30px'};
         let css_top_3 = {'padding-top':'3%'};
+        let css_border = {'border':'none'};
         let reponse;
         let numero = 1;
         $('.category-button').on('click', function (e) {
@@ -23,6 +24,7 @@ class Question{
             // }).done(this.handle_result)
             }).done(function (data) {
                 if (data.success) {
+                    $('.questionnaire').css(css_block);
                     $('#category-form').css(css_none);
                     $('#valider').css(css_block);
                     $('#title').empty().append(data.category);
@@ -32,10 +34,12 @@ class Question{
                     $('#rep2').css(css_block).append(data.reponse2);
                     $('#rep3').css(css_block).append(data.reponse3);
                     $('#rep4').css(css_block).append(data.reponse4);
+                    $('#valider').prop('disabled', true);
                     $('.onlyone').click(function () {
                        $('.onlyone').css(css_blanchedalmond);
                        $(this).css(css_blue);
                        reponse = $(this).data('reponse');
+                        $('#valider').prop('disabled', false);
                     });
                     $('#valider').on('click', function (e) {
                         e.preventDefault();
@@ -47,6 +51,8 @@ class Question{
                             if(!data.fini){
                                 numero = numero + 1;
                                 console.log('fini',data.fini);
+                                $('.onlyone').css(css_blanchedalmond)
+                                $('#valider').prop('disabled', true);
                                 $('#number').empty().append("Question " + data.number);
                                 $('#question').empty().append(data.question);
                                 $('#rep1').empty().append(data.reponse1);
@@ -57,6 +63,7 @@ class Question{
                                     $('.onlyone').css(css_blanchedalmond);
                                     $(this).css(css_blue);
                                     reponse = $(this).data('reponse');
+                                    $('#valider').prop('disabled', false);
                                 });
                             }
                             else{
@@ -65,10 +72,12 @@ class Question{
                                 console.log(data.resultat);
                                 console.log(data.test);
                                 let res = data.resultat;
+                                $('#valider').css(css_none);
                                 $('#number')
                                     .html('Resultat')
                                     .css(css_top)
-                                    .css(css_30);
+                                    .css(css_30)
+                                    .css(css_border);
                                 $('#rep1')
                                     .empty()
                                     .css(css_none);
@@ -81,7 +90,8 @@ class Question{
                                 $('#rep2')
                                     .empty()
                                     .append(res + ' /10')
-                                    .css(css_top_3);
+                                    .css(css_top_3)
+                                    .css(css_border);
                                 $('#question')
                                     .empty()
                                     .css(css_none);
