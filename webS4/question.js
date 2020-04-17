@@ -72,7 +72,9 @@ class Question{
                                 console.log(data.resultat);
                                 console.log(data.test);
                                 let res = data.resultat;
-                                $('#valider').css(css_none);
+                                $('#valider').html('Retour aux choix').click(function () {
+                                    window.location.href = 'question.html';
+                                });
                                 $('#number')
                                     .html('Resultat')
                                     .css(css_top)
