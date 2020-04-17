@@ -26,7 +26,7 @@ class Question{
                     $('#category-form').css(css_none);
                     $('#valider').css(css_block);
                     $('#title').empty().append(data.category);
-                    question.affiheQuestion(data.number, data.question, data.reponse1, data.reponse2, data.reponse3, data.reponse4);
+                    question.affichequestion(data.number, data.question, data.reponse1, data.reponse2, data.reponse3, data.reponse4);
                     $('.onlyone').click(function () {
                        $('.onlyone').css(css_blanchedalmond);
                        $(this).css(css_blue);
@@ -44,7 +44,7 @@ class Question{
                                 numero = numero + 1;
                                 console.log('fini',data.fini);
                                 $('.onlyone').css(css_blanchedalmond)
-                                question.afficheQuestion(data.number, data.question, data.reponse1, data.reponse2, data.reponse3, data.reponse4);
+                                question.affichequestion(data.number, data.question, data.reponse1, data.reponse2, data.reponse3, data.reponse4);
                                 $('.onlyone').click(function () {
                                     $('.onlyone').css(css_blanchedalmond);
                                     $(this).css(css_blue);
@@ -94,7 +94,7 @@ class Question{
 
     }
 
-    afficheQuestion(number,question,rep1,rep2,rep3,rep4){
+    affichequestion(number,question,rep1,rep2,rep3,rep4){
         $('#number').empty().append("Question " + number);
         $('#question').empty().append(question);
         $('#rep1').empty().append(rep1);
