@@ -73,7 +73,8 @@ class Question{
                                     .empty()
                                     .append(res + ' /10')
                                     .css(css_top_3)
-                                    .css(css_border);
+                                    .css(css_border)
+                                    .css(css_blanchedalmond);
                                 $('#question')
                                     .empty()
                                     .css(css_none);
