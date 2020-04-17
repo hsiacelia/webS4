@@ -15,7 +15,7 @@ $scoreBoard = json_decode($contentFileJson, true);
 
 
 foreach ($scoreBoard['users'] as $key){
-    for ($i = 0; $i < 3; ++$i){
+    for ($i = 0; $i < 4; ++$i){
         foreach ($key[$i] as $value){
             if ($value["username"] == $_POST["username"] && $value["password"] == $_POST["password"]){
 
