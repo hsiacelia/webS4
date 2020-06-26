@@ -19,7 +19,7 @@
           ],
           "2": [
             {
-              "question" : "Quel élément n\\'est pas utilisé pour faire des sushi ?",
+              "question" : "Quel élément n'est pas utilisé pour faire des sushi ?",
               "reponse" : [
                 {
                   "1" : "Sel",
@@ -45,7 +45,7 @@
           ],
           "4" : [
             {
-              "question" : "D\\'où provient le meilleur fromage du monde World Cheese Awards 2019 ?",
+              "question" : "D'où provient le meilleur fromage du monde World Cheese Awards 2019 ?",
               "reponse" : [
                 {
                   "1": "Italie",
@@ -71,7 +71,7 @@
           ],
           "6" : [
             {
-              "question" : "Quelle est l\\'épice la plus chère au monde ?",
+              "question" : "Quelle est l'épice la plus chère au monde ?",
               "reponse" : [
                 {
                   "1": "Safran",
@@ -224,7 +224,7 @@
                   "1": "30",
                   "2" : "35",
                   "3" : "40",
-                  "4" : "Il n\\'y a pas de niveau minimum requis"
+                  "4" : "Il n'y a pas de niveau minimum requis"
                 }
               ]
             }
@@ -237,7 +237,7 @@
                   "1": "50 Poképièces",
                   "2" : "100 Poképièces",
                   "3" : "150 Poképièces",
-                  "4" : "Il n\\'y a pas de niveau minimum requis"
+                  "4" : "Il n'y a pas de niveau minimum requis"
                 }
               ]
             }
